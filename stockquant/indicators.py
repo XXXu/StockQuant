@@ -129,6 +129,7 @@ def MACD(fastperiod, slowperiod, signalperiod, kline):
         close_array[t] = item[4]
         t += 1
     result = (talib.MACD(close_array, fastperiod=fastperiod, slowperiod=slowperiod, signalperiod=signalperiod))
+    print("MACD result is: ", result)
     DIF = result[0]
     DEA = result[1]
     MACD = result[2] * 2

@@ -1,5 +1,5 @@
 from stockquant.source.baostockdata import BaoStockData
-from stockquant.source.money import MoneyData
+from stockquant.source.sinadata import SinaData
 from stockquant.source.tusharedata import TuShareData
 from stockquant.utils.tools import get_localtime
 from stockquant.utils.logger import logger
@@ -18,7 +18,7 @@ class Market:
         :param symbol: 例如："sh601003"，或者"sz002307"，前者是沪市，后者是深市
         :return:返回一个字典
         """
-        return MoneyData.get_realtime_data(symbol)
+        return SinaData.get_realtime_data(symbol)
 
     @staticmethod
     def shenzhen_component_index():
@@ -26,7 +26,7 @@ class Market:
         获取深圳成指
         :return:返回一个字典
         """
-        return MoneyData.shenzhen_component_index()
+        return SinaData.shenzhen_component_index()
 
     @staticmethod
     def shanghai_component_index():
@@ -34,7 +34,7 @@ class Market:
         获取上证综指
         :return:
         """
-        return MoneyData.shanghai_component_index()
+        return SinaData.shanghai_component_index()
 
     """
     BaoStockData

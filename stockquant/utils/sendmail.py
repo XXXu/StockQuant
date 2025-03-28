@@ -16,6 +16,10 @@ def sendmail(data):
     to_addr = config.SENDMAIL["to"]
     smtp_server = config.SENDMAIL["server"]
     port = config.SENDMAIL["port"]
+    print("*** from_addr is: ", from_addr)
+    print("*** password is: ", password)
+    print("*** to_addr is: ", to_addr)
+    print("*** port is: ", port)
 
     msg = MIMEText(data, 'plain', 'utf-8')
     name, addr = parseaddr('Alert <%s>' % from_addr)

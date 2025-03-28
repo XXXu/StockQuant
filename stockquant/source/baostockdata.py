@@ -659,7 +659,6 @@ class BaoStockData:
 
 if __name__ == '__main__':
 
-    config.loads('config.json')
     bao = BaoStockData()
     # print(bao.query_history_k_data_plus("sh000001", "1d", adj='2'))
     print(bao.query_trade_dates())

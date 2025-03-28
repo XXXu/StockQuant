@@ -1,0 +1,15 @@
+{
+    "LOG": {
+        "level": "debug",
+        "handler": "stream"
+    },
+    "DINGTALK": "https://oapi.dingtalk.com/robot/send?access_token=9c3915578b5a5b92f921b8249a745a3fbc866122dc684c3cd2d6310ab6d143de",
+    "TUSHARE": "fc3fc9c8caaed91aee82de110bb203f0df024692a267d44285c8a2f1",
+    "SENDMAIL": {
+        "from" : "2541564613@qq.com",
+        "password" : "lrppussxvrbsdjgb",
+        "to" : "xiao930822@163.com",
+        "server" : "smtp.qq.com",
+        "port": 587
+    }
+}
